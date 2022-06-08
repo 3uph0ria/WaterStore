@@ -1,0 +1,144 @@
+﻿<Page x:Class="WaterStore.Pages.PageBasket"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WaterStore.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="PageBasket">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"></ColumnDefinition>
+                <ColumnDefinition Width="15*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock
+        Grid.Row="0"
+        Margin="10 0 0 0"
+        VerticalAlignment="Center"
+        Text="Корзина"
+        Style="{StaticResource MaterialDesignHeadline5TextBlock}" />
+
+
+            <Button Grid.Column="1" Margin="5" Name="BtnBack2" Click="BtnBack_Click_1">Назад</Button>
+        </Grid>
+        
+        
+        <ListView Grid.Row="1" x:Name="ListServices" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalContentAlignment="Left" >
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"></WrapPanel>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <materialDesign:Card
+                        Width="350">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                    Height="250" />
+                                <RowDefinition
+                                    Height="*" />
+                                <RowDefinition
+                                    Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Image
+                              Source="{Binding Img}"
+                              Height="250"
+                              Width="266"
+                              Stretch="UniformToFill" />
+                            <StackPanel
+                                Grid.Row="1"
+                                Margin="8 10 8 0">
+                                <TextBlock
+                                Text="{Binding Name}"
+                                Style="{StaticResource MaterialDesignHeadline6TextBlock}"                              FontWeight="Bold">
+                                </TextBlock>
+                                <TextBlock
+                                    Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                    TextWrapping="Wrap"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding Cost, StringFormat={} Стоимость {0}₽}" />
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock
+                                    Style="{StaticResource MaterialDesignSubtitle1TextBlock}"
+                                    TextWrapping="Wrap"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding quantity, StringFormat={} количество {0}шт.}" />
+                                    <Button Margin="5" Name="BtnAddQuantity" Click="BtnAddQuantity_Click">+</Button>
+                                    <Button Margin="5" Name="BtnDelQuantity" Click="BtnDelQuantity_Click">-</Button>
+                                </StackPanel>
+                                <Button Content="УДАЛИТЬ" Margin="0 0 0 10" Style="{StaticResource MaterialDesignOutlinedButton}" Name="BtnDelService" Click="BtnDelService_Click" />
+
+
+                            </StackPanel>
+                        </Grid>
+                    </materialDesign:Card>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackPanel  Grid.Row="2" Orientation="Horizontal">
+            <TextBox 
+            Name="FullName"
+            Style="{StaticResource MaterialDesignFilledTextBox}"
+            VerticalAlignment="Center"
+            Width="250"
+             Margin="10 0 10 0"
+            HorizontalAlignment="Center"
+            MaxLength="50"
+            materialDesign:TransitionAssist.DisableTransitions="True"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            materialDesign:HintAssist.Hint="ФИО"
+            IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            <TextBox 
+            Name="Phone"
+            Style="{StaticResource MaterialDesignFilledTextBox}"
+            VerticalAlignment="Center"
+            Width="250"
+             Margin="10 0 20 0"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            materialDesign:HintAssist.Hint="Телефон"
+             MaxLength="11"
+            HorizontalAlignment="Center"
+            materialDesign:TransitionAssist.DisableTransitions="True"
+            IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            <TextBox 
+            Name="Adress"
+            Style="{StaticResource MaterialDesignFilledTextBox}"
+            VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+            Width="250"
+                MaxLength="200"
+            materialDesign:TransitionAssist.DisableTransitions="True"
+             Margin="10 0 20 0"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            materialDesign:HintAssist.Hint="Адрес"
+            IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+        </StackPanel>
+        <StackPanel  Grid.Row="4" Orientation="Horizontal">
+            <TextBlock
+                VerticalAlignment="Center"
+                Margin="10 0 20 0"
+                Name="currentCost"
+                Text="Итого"
+                Style="{StaticResource MaterialDesignHeadline5TextBlock}" />
+            <Button Content="Заказать" Name="AddOrder" Click="AddOrder_Click"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Page>

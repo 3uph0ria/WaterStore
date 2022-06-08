@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="34635679d2b04d658f0f82eea0882421" Name="Diagram1">
+        <EntityTypeShape EntityType="WaterStoreModel.Admins" Width="1.5" PointX="8" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.Categoris" Width="1.5" PointX="1.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.Clients" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.ClientService" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.FurnitureOrders" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.Permissions" Width="1.5" PointX="5.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.Services" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WaterStoreModel.Status" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="WaterStoreModel.FK_Admins_Permissions" ManuallyRouted="false" />
+        <AssociationConnector Association="WaterStoreModel.FK_Services_Categoris" ManuallyRouted="false" />
+        <AssociationConnector Association="WaterStoreModel.FK_ClientService_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="WaterStoreModel.FK_FurnitureOrders_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="WaterStoreModel.FK_ClientService_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="WaterStoreModel.FK_ClientService_Status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
