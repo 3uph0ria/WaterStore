@@ -1,0 +1,82 @@
+﻿<Page x:Class="WaterStore.Pages.Account"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WaterStore.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+            xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+      Title="Account">
+
+    <Grid>
+
+        <Grid
+    MinWidth="500"
+    MinHeight="450">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition  Width="30*"/>
+                        <ColumnDefinition  Width="10*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                <StackPanel
+                    Background="#FF0877C3"
+                    Orientation="Vertical"
+                            Grid.Row="0"
+                        Grid.RowSpan="3"
+                        Grid.Column="2">
+                    <TextBlock
+                        Foreground="White"
+                        VerticalAlignment="Center"
+                        Margin="10"
+                        HorizontalAlignment="Center"
+                        FontSize="20"
+                        Text="WaterStore" />
+                    <Button
+                        Margin="10"
+                        Foreground="#FFF"
+                        HorizontalAlignment="Center"
+                        Style="{StaticResource MaterialDesignFlatButton}"
+                        Name="BtnServices"
+                        Click="BtnServices_Click_1"
+                        Content="Каталог" />
+                    <Button
+                        Margin="10"
+                        HorizontalAlignment="Center"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Name="BtnClients"
+                                    Foreground="#FFF"
+                        Click="BtnClients_Click_1"
+                        Content="Клиенты" />
+                    <Button
+                         Margin="10"
+                        Foreground="#FFF"
+                        HorizontalAlignment="Center"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Name="BtnClientService"
+                        Click="BtnClientService_Click_1"
+                        Content="Продажи" />
+                    <Button
+                        Foreground="#FFF"
+                        Margin="10"
+                        HorizontalAlignment="Center"
+                        Style="{DynamicResource MaterialDesignFlatButton}"
+                        Name="Btnback"
+                        Click="Btnback_Click"
+                        Content="Выход" />
+                </StackPanel>
+
+                <Frame Grid.Row="0" Grid.ColumnSpan="2"  Grid.RowSpan="3" Name="AccountFrame" NavigationUIVisibility="Hidden"></Frame>
+
+                </Grid>
+            </Grid>
+    </Grid>
+</Page>
