@@ -283,9 +283,9 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\water-logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\water-logo.png" />
     <Resource Include="Resources\water-ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
