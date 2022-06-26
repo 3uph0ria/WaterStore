@@ -22,15 +22,37 @@
         Name="Header"
         Text="Header"
         Style="{StaticResource MaterialDesignHeadline5TextBlock}" />
-        <TextBox
-            Grid.Row="1"
-            Name="Search"
-            Style="{StaticResource MaterialDesignFilledTextBox}"
-            VerticalAlignment="Center"
-            AcceptsReturn="True"
-            TextWrapping="Wrap"
-            materialDesign:HintAssist.Hint="Поиск"
-            IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Name="Search"
+                TextChanged="Search_TextChanged"
+                Grid.Column="0"
+                Grid.Row="1"
+                Margin="8 0 0 0"
+                materialDesign:HintAssist.Hint="Поиск"
+                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                BorderThickness="0"
+                MinWidth="200"
+                VerticalAlignment="Center" />
+
+
+            <ComboBox 
+                Margin="5"
+                materialDesign:HintAssist.Hint="Категория"
+                Width="350"
+                Grid.Column="1"
+                SelectionChanged="CBoxServices_SelectionChanged"
+                VerticalAlignment="Center"
+                Grid.Row="2"
+                x:Name="CBoxServices"
+                DisplayMemberPath="Name"
+            />
+        </Grid>
         <DataGrid Grid.Row="2" Name="DGridServices" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Наименование" Binding="{Binding Name}"></DataGridTextColumn>

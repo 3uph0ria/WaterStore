@@ -28,12 +28,14 @@ namespace WaterStore.Pages
             if (CurrentUser.AccessClients == false) BtnClients.Visibility = Visibility.Hidden;
             if (CurrentUser.AccessClientsServicrs == false) BtnClientService.Visibility = Visibility.Hidden;
             if (CurrentUser.AccessServices == false) BtnServices.Visibility = Visibility.Hidden;
+            if (CurrentUser.AccessReport == false) BtnReports.Visibility = Visibility.Hidden;
 
 
             NavManager.AccountFrame = AccountFrame;
             NavManager.BtClients = BtnClients;
             NavManager.BtnServices = BtnServices;
             NavManager.BtnClientService = BtnClientService;
+            NavManager.BtnReports = BtnReports;
 
             AccountFrame.Navigate(new PageServices(NavManager.BtnServices.Content + ""));
         }
@@ -61,6 +63,11 @@ namespace WaterStore.Pages
         private void Btnback_Click(object sender, RoutedEventArgs e)
         {
             NavManager.MainFrame.Navigate(new SignIn());
+        }
+
+        private void BtnReports_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavManager.MainFrame.Navigate(new PageReports("Отчеты по продажам"));
         }
     }
 }

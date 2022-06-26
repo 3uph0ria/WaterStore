@@ -113,6 +113,16 @@ namespace WaterStore.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_00000020312_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_00000020312_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1c_good_00000020378_photo {
             get {
                 object obj = ResourceManager.GetObject("_1c_good_00000020378_photo", resourceCulture);
@@ -123,9 +133,59 @@ namespace WaterStore.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_00000024187_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_00000024187_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_00000024801_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_00000024801_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1c_good_00000025467_photo {
             get {
                 object obj = ResourceManager.GetObject("_1c_good_00000025467_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_01613_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_01613_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_02819_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_02819_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1c_good_03012_photo {
+            get {
+                object obj = ResourceManager.GetObject("_1c_good_03012_photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +243,39 @@ namespace WaterStore.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap z_tbl_goods_rec00000020089_img4975 {
+            get {
+                object obj = ResourceManager.GetObject("z_tbl_goods_rec00000020089_img4975", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z_tbl_goods_rec00000020092_img5635 {
+            get {
+                object obj = ResourceManager.GetObject("z_tbl_goods_rec00000020092_img5635", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap z_tbl_goods_rec00000020094_img4071 {
             get {
                 object obj = ResourceManager.GetObject("z_tbl_goods_rec00000020094_img4071", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z_tbl_goods_rec00000020262_img4979 {
+            get {
+                object obj = ResourceManager.GetObject("z_tbl_goods_rec00000020262_img4979", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +356,16 @@ namespace WaterStore.Properties {
         internal static System.Drawing.Bitmap z_tbl_goods_rec02394_img3419 {
             get {
                 object obj = ResourceManager.GetObject("z_tbl_goods_rec02394_img3419", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z_tbl_goods_rec03171_img9062 {
+            get {
+                object obj = ResourceManager.GetObject("z_tbl_goods_rec03171_img9062", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

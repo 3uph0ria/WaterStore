@@ -116,19 +116,7 @@
             HorizontalAlignment="Center"
             materialDesign:TransitionAssist.DisableTransitions="True"
             IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
-            <TextBox 
-            Name="Adress"
-            Style="{StaticResource MaterialDesignFilledTextBox}"
-            VerticalAlignment="Center"
-             HorizontalAlignment="Center"
-            Width="250"
-                MaxLength="200"
-            materialDesign:TransitionAssist.DisableTransitions="True"
-             Margin="10 0 20 0"
-            AcceptsReturn="True"
-            TextWrapping="Wrap"
-            materialDesign:HintAssist.Hint="Адрес"
-            IsEnabled="{Binding Path=IsChecked, ElementName=MaterialDesignFilledTextBoxEnabledComboBox}" />
+            
         </StackPanel>
         <StackPanel  Grid.Row="4" Orientation="Horizontal">
             <TextBlock

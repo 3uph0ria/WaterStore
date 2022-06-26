@@ -72,7 +72,7 @@ namespace WaterStore.Pages
                 Clients currnetClient = new Clients();
                 currnetClient.Fullname = FullName.Text;
                 currnetClient.Phone = Phone.Text;
-                currnetClient.Adress = Adress.Text;
+                currnetClient.Adress = "";
                 WaterStoreEntities.GetContext().Clients.Add(currnetClient);
                 WaterStoreEntities.GetContext().SaveChanges();
                 var newClients = WaterStoreEntities.GetContext().Clients.ToList();

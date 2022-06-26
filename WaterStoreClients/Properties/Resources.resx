@@ -133,8 +133,17 @@
   <data name="water_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\water-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z_tbl_goods_rec00000020089_img4975" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z_tbl_goods-rec00000020089-img4975.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z_tbl_goods_rec00000020092_img5635" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z_tbl_goods-rec00000020092-img5635.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="z_tbl_goods_rec00000020094_img4071" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z_tbl_goods-rec00000020094-img4071.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="z_tbl_goods_rec00000020262_img4979" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z_tbl_goods-rec00000020262-img4979.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z_tbl_goods_rec00000024006_img5656" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z_tbl_goods-rec00000024006-img5656.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,6 +169,9 @@
   <data name="z_tbl_goods_rec02394_img3419" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z_tbl_goods-rec02394-img3419.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="z_tbl_goods_rec03171_img9062" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z_tbl_goods-rec03171-img9062.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="z_tbl_goods_rec03192_img3611" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z_tbl_goods-rec03192-img3611.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,10 +190,28 @@
   <data name="_1c_good_00000020088_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1c-good-00000020088-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1c_good_00000020312_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-00000020312-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_1c_good_00000020378_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1c-good-00000020378-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_1c_good_00000024187_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-00000024187-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1c_good_00000024801_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-00000024801-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_1c_good_00000025467_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1c-good-00000025467-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1c_good_01613_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-01613-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1c_good_02819_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-02819-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1c_good_03012_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1c-good-03012-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

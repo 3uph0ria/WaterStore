@@ -255,23 +255,6 @@
   <ItemGroup>
     <Resource Include="Resources\water-logo.png" />
     <Resource Include="Resources\water-ico.ico" />
-    <Resource Include="Resources\z_tbl_goods-rec00000027084-img10119.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000025174-img8229.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000024703-img7005.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000024603-img8439.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000024319-img6885.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000024034-img7169.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000024006-img5656.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec00000020094-img4071.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec03192-img3611.jpg" />
-    <Resource Include="Resources\z_tbl_goods-rec02394-img3419.jpg" />
-    <Resource Include="Resources\1c-good-00000025467-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000020378-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000020088-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000020082-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000020071-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000012846-photo.jpg" />
-    <Resource Include="Resources\1c-good-00000012778-photo.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Models\DataModel.Context.tt">
@@ -284,6 +267,33 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\1c-good-02819-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000020312-photo.jpg" />
+    <Resource Include="Resources\1c-good-01613-photo.jpg" />
+    <Resource Include="Resources\1c-good-03012-photo.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec03171-img9062.jpg" />
+    <Resource Include="Resources\1c-good-00000024801-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000024187-photo.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000020092-img5635.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000020262-img4979.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000020089-img4975.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000027084-img10119.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000025174-img8229.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000024006-img5656.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000024034-img7169.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec03192-img3611.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000024603-img8439.jpg" />
+    <Resource Include="Resources\1c-good-00000012778-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000020378-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000025467-photo.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec02394-img3419.jpg" />
+    <Resource Include="Resources\1c-good-00000020082-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000020088-photo.jpg" />
+    <Resource Include="Resources\1c-good-00000020071-photo.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000020094-img4071.jpg" />
+    <Resource Include="Resources\1c-good-00000012846-photo.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000024703-img7005.jpg" />
+    <Resource Include="Resources\z_tbl_goods-rec00000024319-img6885.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.0.0\build\MaterialDesignThemes.targets')" />

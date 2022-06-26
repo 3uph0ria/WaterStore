@@ -27,6 +27,7 @@ namespace WaterStore.Pages
             InitializeComponent();
             DGridServices.ItemsSource = WaterStoreEntities.GetContext().Services.ToList();
             Header.Text = header;
+            CBoxServices.ItemsSource = WaterStoreEntities.GetContext().Categoris.ToList();
         }
 
         private void BtnEditService_Click(object sender, RoutedEventArgs e)
@@ -57,6 +58,31 @@ namespace WaterStore.Pages
                     MessageBox.Show(ex.ToString());
                 }
             }
+        }
+
+        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Update();
+        }
+
+        private void CBoxServices_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var cat = (Categoris)CBoxServices.SelectedItem;
+            var services = WaterStoreEntities.GetContext().Services.ToList();
+            services = services.Where(p => p.Categoris.Name.Contains(cat.Name)).ToList();
+            DGridServices.ItemsSource = services;
+        }
+
+        public void Update()
+        {
+
+            var services = WaterStoreEntities.GetContext().Services.ToList();
+
+
+
+            services = services.Where(p => p.Name.ToLower().Contains(Search.Text.ToLower())).ToList();
+            DGridServices.ItemsSource = services;
+
         }
     }
 }

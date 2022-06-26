@@ -36,8 +36,22 @@ namespace WaterStore.Pages
 
         private void BtnAddservice_Click(object sender, RoutedEventArgs e)
         {
+            StringBuilder erros = new StringBuilder();
+            long n;
+            bool isNumeric = long.TryParse(Cost.Text, out n);
 
-            if(_ccurrnetServices.Cost <= 0)
+               
+             if (isNumeric == false && Convert.ToInt32(Cost.Text) > 0)
+                erros.AppendLine("Цена должна быть > 0");
+
+
+            if (erros.Length > 0)
+            {
+                MessageBox.Show(erros.ToString());
+                return;
+            }
+
+            if (_ccurrnetServices.Cost <= 0)
             {
                 MessageBox.Show("Цена не должна быть < 0");
                 return;

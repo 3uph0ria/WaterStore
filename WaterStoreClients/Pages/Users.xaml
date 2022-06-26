@@ -28,17 +28,38 @@
             <ColumnDefinition Width="5*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBox
-                                Name="Search"
-                                TextChanged="Search_TextChanged"
-                                Grid.Column="0"
-                                Grid.Row="1"
-                                Margin="8 0 0 0"
-                                materialDesign:HintAssist.Hint="Поиск"
-                                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
-                                BorderThickness="0"
-                                MinWidth="200"
-                                VerticalAlignment="Center" />
+      
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBox
+                Name="Search"
+                TextChanged="Search_TextChanged"
+                Grid.Column="0"
+                Grid.Row="1"
+                Margin="8 0 0 0"
+                materialDesign:HintAssist.Hint="Поиск"
+                materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
+                BorderThickness="0"
+                MinWidth="200"
+                VerticalAlignment="Center" />
+
+
+            <ComboBox 
+                Margin="5"
+                materialDesign:HintAssist.Hint="Категория"
+                Width="350"
+                Grid.Column="1"
+                SelectionChanged="CBoxServices_SelectionChanged"
+                VerticalAlignment="Center"
+                Grid.Row="2"
+                x:Name="CBoxServices"
+                DisplayMemberPath="Name"
+            />
+        </Grid>
 
         <TextBlock
         Grid.Row="0"

@@ -98,3 +98,4 @@ D:\WebGit\WaterStore\WaterStoreAdmin\WaterStore\obj\Debug\WaterStore.csproj.Core
 D:\WebGit\WaterStore\WaterStoreAdmin\WaterStore\obj\Debug\WaterStore.csproj.CopyComplete
 D:\WebGit\WaterStore\WaterStoreAdmin\WaterStore\obj\Debug\WaterStore.exe
 D:\WebGit\WaterStore\WaterStoreAdmin\WaterStore\obj\Debug\WaterStore.pdb
+D:\WebGit\WaterStore\WaterStoreAdmin\WaterStore\obj\Debug\WaterStore.csproj.ResolveComReference.cache

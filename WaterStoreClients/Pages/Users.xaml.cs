@@ -27,6 +27,7 @@ namespace WaterStore.Pages
         {
 
             InitializeComponent();
+            CBoxServices.ItemsSource = WaterStoreEntities.GetContext().Categoris.ToList();
             Update();
         }
 
@@ -89,6 +90,14 @@ namespace WaterStore.Pages
             Categoris name = (Categoris)(sender as Button).DataContext as Categoris;
             var services = WaterStoreEntities.GetContext().Services.ToList();
             services = services.Where(p => p.Categoris.Name.Contains(name.Name)).ToList();
+            ListServices.ItemsSource = services;
+        }
+
+        private void CBoxServices_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var cat = (Categoris)CBoxServices.SelectedItem;
+            var services = WaterStoreEntities.GetContext().Services.ToList();
+            services = services.Where(p => p.Categoris.Name.Contains(cat.Name)).ToList();
             ListServices.ItemsSource = services;
         }
     }

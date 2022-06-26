@@ -37,6 +37,23 @@ namespace WaterStore.Pages
 
         private void BtnAddservice_Click(object sender, RoutedEventArgs e)
         {
+
+            StringBuilder erros = new StringBuilder();
+            long n;
+            bool isNumeric = long.TryParse(Phone.Text, out n);
+
+
+            if (isNumeric == false)
+                erros.AppendLine("В номере телефона должны быть только цифры");
+
+
+            if (erros.Length > 0)
+            {
+                MessageBox.Show(erros.ToString());
+                return;
+            }
+
+
             if (_ccurrnetServices.Id == 0)
                 WaterStoreEntities.GetContext().Clients.Add(_ccurrnetServices);
 
